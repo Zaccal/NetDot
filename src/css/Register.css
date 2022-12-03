@@ -1,0 +1,62 @@
+.window {
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 15% auto;
+    box-shadow: 0 0 10px #333;
+    padding: 20px 15px 20px 15px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.errorInput {
+    font-family: sans-serif;
+    color: crimson;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.errorInput span {
+    color: red;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.register input {
+    margin: 0;
+    border: 1px solid #000;
+    padding-left: 14px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.register input:focus {
+    border: 2px solid rgb(69, 69, 255);
+}
+
+.register__login {
+    margin-bottom: 30px !important;
+}
+
+.register__btn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 10px 15px 10px;
+    background-color: rgb(69, 69, 255);
+    margin: 30px auto 0;
+    transition: 0.3s;
+}
+
+.register__btn:hover {
+    box-shadow: 0 0 10px rgb(69, 69, 255);
+}

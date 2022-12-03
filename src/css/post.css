@@ -1,0 +1,23 @@
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+body .post + .post {
+    margin-top: 40px;
+}
+
+.date {
+    font-size: 18px;
+    margin-left: 30px;
+}

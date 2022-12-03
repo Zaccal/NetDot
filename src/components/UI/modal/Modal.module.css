@@ -1,0 +1,51 @@
+.ModalHeader {
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: right;
+    padding: 10px 10px 10px 5px;
+}
+
+.closeModalBtn {
+    cursor: pointer;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border: 0;
+}
+
+.closeModalBtn img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ModalBackground {
+    background: rgba(43, 43, 43, 0.68);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.ModalBackground.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ModalContend.active {
+    margin-bottom: 0;
+}
+
+.ModalContend {
+    transition: 0.3s all;
+    margin-bottom: 500px;
+    background-color: #ffe9d9;
+    border-radius: 5px;
+    min-width: 250px;
+}

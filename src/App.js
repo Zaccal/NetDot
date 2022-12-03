@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import { Route, Routes } from "react-router-dom";
+import Posts from "./pages/Posts";
+import RegisterPage from "./pages/RegisterPage";
+import Error404 from "./pages/Error404";
+import Login from "./pages/Login";
+import PostPage from "./pages/PostPage";
+import "./css/app.css";
+import { AuthContext } from "./context";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const { userInfoBool } = useContext(AuthContext);
+
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/Posts" element={<Posts />}></Route>
+                <Route path="/Posts/:id" element={<PostPage />}></Route>
+                <Route
+                    path="/"
+                    element={userInfoBool ? <Login /> : <RegisterPage />}
+                ></Route>
+                <Route path="/Register" element={<RegisterPage />}></Route>
+                <Route path="/Login/" element={<Login />}></Route>
+                <Route path="*" element={<Error404 />}></Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

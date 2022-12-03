@@ -1,0 +1,12 @@
+.controlContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn {
+    height: 30px;
+    width: 70px;
+}

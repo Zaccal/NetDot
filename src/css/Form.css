@@ -1,0 +1,17 @@
+input, textarea {
+    width: 100%;
+    margin-top: 7px;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+.posts > div + div {
+    margin-top: 30px;
+}
