@@ -1,0 +1,18 @@
+.about-me {
+    padding: 2rem 0;
+  }
+  
+.about-me__image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+  
+.about-me__name {
+    margin-bottom: 0.5rem;
+}
+  
+.about-me__bio {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}

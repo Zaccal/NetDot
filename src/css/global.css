@@ -1,0 +1,54 @@
+body {
+    overflow-x: hidden;
+}
+
+.animate-show {
+    animation: animate-show 0.8s ease-in-out;
+}
+
+.animate-hidden {
+    animation: animate-hidden 0.8s ease-in-out forwards;
+}
+
+@keyframes animate-show {
+    0% {
+        margin-top: -15px;
+        opacity: 0;
+    }
+
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animate-hidden {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(900px);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.post + .post {
+    margin-top: 30px;
+}
+
+.placeholder-glow {
+    display: block;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

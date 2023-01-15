@@ -1,0 +1,27 @@
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userInfoList {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,19 @@
+.dangerInput {
+    border: 2px solid #f5c2c7;
+    /* box-shadow: 0 0 5px 1px #842029; */
+}
+
+.dangerInput::placeholder {
+    color: #842029;
+    /* color: var(--bs-danger-rgb); */
+    /* opacity: var(--bs-text-opacity); */
+}
+
+.dangerInput:focus {
+    border-color: #f5c2c7;
+    box-shadow: 0 0 0 .25rem #f5c2c7;
+}
+
+.text_error {
+    color: #842029;
+}

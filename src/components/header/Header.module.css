@@ -1,0 +1,33 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.dropdow {
+    height: 20px;
+}
+
+.Link {
+    color: var(--bs-nav-link-color);
+    transition: 0.3s;
+}
+
+.Link:hover {
+    color: var(--bs-nav-link-hover-color);
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

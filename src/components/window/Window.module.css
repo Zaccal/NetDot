@@ -1,0 +1,8 @@
+.window {
+    border: 1px solid #333;
+    padding: 20px 15px;
+    margin: 10% auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px -5px #333;
+}
